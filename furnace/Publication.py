@@ -112,10 +112,10 @@ class Document(ABC):
         """The list of other documents that are cited by this document."""
         return None
 
-    # @property
-    # def citations(self):
-    #     """The list of other documents that cite this document."""
-    #     return None
+    @property
+    def citations(self):
+        """The list of other documents that cite this document."""
+        return None
 
     @property
     def pub_url(self):

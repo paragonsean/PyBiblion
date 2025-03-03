@@ -1,9 +1,10 @@
 
 import warnings
+from datetime import datetime
 import arxiv
-from retrievers.Author import Author
-from retrievers.Publication import Document
-from local_deprecated.Reference import filter_punctuation
+from furnace.Author import Author
+from furnace.Publication import Document
+from tools.Reference import filter_punctuation
 
 
 
@@ -146,7 +147,7 @@ class Arxiv_paper(Document):
 # print(a.authors)
 # def my_function(name,**kwargs):
 #     print(name)
-# 
+#     # 使用kwargs中的关键字参数
 #     for key, value in kwargs.items():
 #         print(key, value)
 # my_function(name='Alice', age=25, city='New York')

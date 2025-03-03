@@ -1,9 +1,21 @@
+import random
+import time
 import warnings
 from datetime import datetime
+
+import arxiv
 from retry import retry
-from retrievers.Author import Author
-from retrievers.Publication import Document
-from local_deprecated.Reference import get_paper_info_from_REST
+from scholarly import scholarly
+# OPENAI SETUP
+import openai
+import requests
+import pandas as pd
+import matplotlib.pyplot as plt
+import string
+
+from furnace.Author import Author
+from furnace.Publication import Document
+from tools.Reference import filter_punctuation, get_paper_info_from_REST
 
 
 class Crossref_paper(Document):
